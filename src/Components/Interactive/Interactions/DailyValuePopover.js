@@ -28,7 +28,7 @@ const DailyValuePopover = ({title, content, inputValue, percentage,dv }) => (
     <h3>{title}</h3>
     {content}
     <p className='info-normal'>{nutrientAmount(dv)}</p>
-    <p>{nutrientMessage(inputValue,percentage)}</p>
+    <p className='info-normal'>{nutrientMessage(inputValue,percentage)}</p>
   </div>
 );
 

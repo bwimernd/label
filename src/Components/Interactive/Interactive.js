@@ -30,7 +30,7 @@ const Interactive = ({nutrition, value}) => {
             />
 
             <Nutrient 
-              className="alignLeft tab" 
+              className="alignLeft" 
               name="Saturated Fat" 
               value={inputValue * nutrient.satfat} 
               unit="g" 
@@ -46,7 +46,7 @@ const Interactive = ({nutrition, value}) => {
            />
 
             <Nutrient 
-              className="alignLeft tab" 
+              className="alignLeft" 
               name="Trans Fat" 
               value={inputValue * nutrient.trans} 
               inputValue={inputValue}
@@ -89,7 +89,7 @@ const Interactive = ({nutrition, value}) => {
 
             <Nutrient 
               className="alignLeft" 
-              name="Total Carbohydrates" 
+              name="Total Carbohydrate" 
               value={inputValue * nutrient.tcarb} 
               unit="g" 
               percentage={inputValue * nutrient.tcarb_dv}
@@ -104,8 +104,8 @@ const Interactive = ({nutrition, value}) => {
             />
 
             <Nutrient 
-              className="alignLeft tab" 
-              name="Dietary Fiber" 
+              className="alignLeft" 
+              name='Dietary Fiber'
               value={inputValue * nutrient.dfiber} 
               unit="g" 
               percentage={inputValue * nutrient.dfiber_dv} 
@@ -120,7 +120,7 @@ const Interactive = ({nutrition, value}) => {
             />
 
             <Nutrient 
-              className="alignLeft tab" 
+              className="alignLeft" 
               name="Total Sugars" 
               value={inputValue * nutrient.tsugar} 
               unit="g" 
@@ -129,7 +129,7 @@ const Interactive = ({nutrition, value}) => {
             />
 
             <Nutrient 
-              className="alignLeft tab2" 
+              className="alignLeft" 
               name="Includes Added Sugars" 
               value={inputValue * nutrient.isugar} 
               unit="g" 
@@ -140,7 +140,7 @@ const Interactive = ({nutrition, value}) => {
               dvContent={
                 <div>
                   <p className='info-header-bad'>Added sugars are a nutrient to get less of.</p>
-                  <p className="info-normal">The Daily Value for Added Sugars is <b>less</b>than 50 g per day.</p>
+                  <p className="info-normal">The Daily Value for Added Sugars is <b>less</b> than 50 g per day.</p>
                 </div>} 
             />
 

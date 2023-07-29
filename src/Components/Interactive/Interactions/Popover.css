@@ -21,6 +21,9 @@
     text-align: center;
     margin: 5px;
   }
+  .popover p {
+    font-weight: normal;
+  }
   
   .popover::after {
     content: " ";
@@ -79,4 +82,5 @@
     color: #333;
     margin-top: 5px;
     padding: 5px;
+    font-weight: normal;
   }

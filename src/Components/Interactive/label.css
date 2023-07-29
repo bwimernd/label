@@ -68,9 +68,20 @@
     font-weight: bold;
     color: black;
   }
+  .p-normal {
+    font-weight: normal;
+    color: black;
+  }
   .alignLeft {
     float:left;
   }
+  .tab {
+    padding-left: 20px; /* Adjust this to the desired indentation */
+  }
+  .tab2 {
+    padding-left: 40px; /* Adjust this to the desired deeper indentation */
+  }
+
   .alignRight {
     float: right;
   }
@@ -120,9 +131,4 @@
     height: 100vh; /* vh stands for viewport height. 100vh will cover the full height of the screen */
   }
   
-  .tab {
-    margin-left: 1.4em
-  }
-  .tab2 {
-    margin-left: 2em;
-  }
+  

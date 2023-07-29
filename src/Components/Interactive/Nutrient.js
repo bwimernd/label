@@ -3,6 +3,28 @@ import Popover from '../Interactive/Interactions/Popover';
 import DailyValuePopover from './Interactions/DailyValuePopover';
 import './label.css';
 
+// Function to return CSS class name based on nutrient's name
+function getClassName(nutrientName) {
+  const nutrientsToBold = ['Total Fat', 'Cholesterol', 'Sodium', 'Total Carbohydrate', 'Protein'];
+
+  return nutrientsToBold.includes(nutrientName) ? 'p-bold' : 'p-normal';
+}
+
+function getIndentClass(nutrientName) {
+  const nutrientsToIndent = ['Saturated Fat', 'Trans Fat', 'Dietary Fiber', 'Total Sugars'];
+  const nutrientsToIndentMore = ['Includes Added Sugars'];
+
+  if (nutrientsToIndent.includes(nutrientName)) {
+    return 'tab';
+  } else if (nutrientsToIndentMore.includes(nutrientName)) {
+    return 'tab2';
+  } else {
+    return 'no-tab';
+  }
+}
+
+
+
 const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverContent, inputValue, dvContent, dv}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [dvHovered, setDVHovered] = useState(false)
@@ -10,9 +32,9 @@ const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverCo
     <div className="tooltip-container" 
          
     >
-      <p className={className} onMouseEnter={() => setIsHovered(true)} 
+      <p className={`${className} ${getClassName(name)}  ${getIndentClass(name)}`} onMouseEnter={() => setIsHovered(true)} 
          onMouseLeave={() => setIsHovered(false)}>
-        <b>{name}</b> {value}{unit}
+        {name} <span className='p-normal'>{value}{unit}</span>
         
         {isHovered && <Popover title={name} content={popoverContent} />}
       </p>
