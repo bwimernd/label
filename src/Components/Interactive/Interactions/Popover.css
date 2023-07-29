@@ -1,0 +1,68 @@
+.popover {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 102%; /* Move the popover to the left of the text */
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #888;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .popover h3 {
+    /* Styles for the title */
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .popover::after {
+    content: " ";
+    position: absolute;
+    top: 50%; 
+    left: 100%; /* Place the arrow to the right side of the popover */
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #888; /* Arrow facing right */
+  }
+  
+  
+  .tooltip-container {
+    position: relative;
+  }
+  
+  .dv-popover {
+    position: absolute;
+    z-index: 10;
+    left: 102%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #888;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 200px;
+    text-align: left;
+  
+  }
+
+  .dv-popover::after {
+    content: " ";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin-left: 10;
+    transform: translateY(-50%);
+    margin-left: -10px; /* Adjust this value if needed */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #888 transparent transparent;
+  }
+  
+  
