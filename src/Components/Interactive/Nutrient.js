@@ -3,7 +3,7 @@ import Popover from '../Interactive/Interactions/Popover';
 import DailyValuePopover from './Interactions/DailyValuePopover';
 import './label.css';
 
-const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverContent, inputValue, dvContent }) => {
+const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverContent, inputValue, dvContent, dv}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [dvHovered, setDVHovered] = useState(false)
   return (
@@ -21,7 +21,7 @@ const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverCo
         <p className='p-bold alignRight' onMouseEnter={() => setDVHovered(true)} 
         onMouseLeave={() => setDVHovered(false)}>
           {percentage}%
-          {dvHovered && <DailyValuePopover title={name} dv_content={"Random for Now"}/>}
+          {dvHovered && <DailyValuePopover title={name} content={dvContent} inputValue={inputValue} percentage={percentage} dv={dv} />}
          </p>
       }
       <br />

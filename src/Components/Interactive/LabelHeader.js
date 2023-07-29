@@ -8,7 +8,7 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
     <h5>{nutrient.servings} servings per container</h5>
     <h3 className='alignLeft'> Serving size </h3> 
     <h3 className='alignRight'>
-      <input type="number" id="myInput" value={inputValue} onChange={handleChange}  style={{width: '50px'}}/> 
+      <input type="number" id="myInput" min={1} value={inputValue} onChange={handleChange}  style={{width: '50px'}}/> 
       {nutrient.serving_size}
     </h3>
     <br />

@@ -82,3 +82,47 @@
   }
 
   /* Nutrient.css */
+
+  .info-header-good {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ADFF2F;
+    padding: 5px;
+  }
+  .info-header-bad {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b22222;
+    padding: 5px;
+  }
+
+  .info-header-normal {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #fffaf0;
+    padding: 5px;
+  }
+  
+  .info-normal {
+    font-size: 1em;
+    color: #333;
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  .all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vh stands for viewport height. 100vh will cover the full height of the screen */
+  }
+  
+  .tab {
+    margin-left: 1.4em
+  }
+  .tab2 {
+    margin-left: 2em;
+  }
