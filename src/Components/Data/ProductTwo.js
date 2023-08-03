@@ -16,7 +16,7 @@ const ProductTwo = [
       tcarb: 18,
       tcarb_dv: 6,
       dfiber: 2,
-      dfiber_dv: 8,
+      dfiber_dv: 3,
       tsugar: 4,
       isugar: 2,
       isugar_dv: 4,
@@ -28,7 +28,7 @@ const ProductTwo = [
       iron: 3,
       iron_dv: 15,
       potassium: 350,
-      potassium_dv: 8
+      potassium_dv: 22
     }
   ];
   
