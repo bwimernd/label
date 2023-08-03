@@ -23,11 +23,37 @@ function getIndentClass(nutrientName) {
   }
 }
 
+function getColor(nutrientName, percentage) {
+  const redNutrients = ['Sodium', 'Saturated Fat', 'Includes Added Sugars'];
+  const greenNutrients = ['Dietary Fiber', 'Vitamin D', 'Calcium', 'Potassium'];
+  
+  if (redNutrients.includes(nutrientName)) {
+    return {
+      backgroundColor: percentage >= 20 ? '#e6550d' : percentage > 5 ? '#fdae6b' : '#fee6ce',
+      borderColor: percentage >= 20 ? '#a50f15' : percentage > 5 ? '#fd8d3c' : '#fdcdac',
+    };
+  } else if (greenNutrients.includes(nutrientName)) {
+    return {
+      backgroundColor: percentage >= 20 ? '#31a354' : percentage > 5 ? '#a1d99b' : '#e5f5e0',
+      borderColor: percentage >= 20 ? '#006d2c' : percentage > 5 ? '#66c2a4' : '#ccece6',
+      borderRadius: '10px'
+    };
+  } else {
+    return null;
+  }
+}
+
+
+
 
 
 const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverContent, inputValue, dvContent, dv}) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [dvHovered, setDVHovered] = useState(false)
+  const [dvHovered, setDVHovered] = useState(false);
+
+  const color = getColor(name, dv);
+
+
   return (
     <div className="tooltip-container" 
          
@@ -42,6 +68,7 @@ const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverCo
       {(percentage !== null && percentage !== undefined) &&
         <p className='p-bold alignRight' onMouseEnter={() => setDVHovered(true)} 
         onMouseLeave={() => setDVHovered(false)}>
+         {color && <span className="color-encode" style={{display: 'inline-block', width: '12.5px', height: '12.5px', borderRadius: color.borderRadius, backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor}`, marginRight: '5px'}}></span>}
           {percentage}%
           {dvHovered && <DailyValuePopover title={name} content={dvContent} inputValue={inputValue} percentage={percentage} dv={dv} />}
          </p>

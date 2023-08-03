@@ -141,3 +141,8 @@ main {
   padding: 1.5rem 2rem;
   box-shadow: var(--dark-shadow);
 }
+
+.interactive-container {
+  display: flex;
+  align-items: start; 
+}

@@ -127,8 +127,15 @@
   .all {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh; /* vh stands for viewport height. 100vh will cover the full height of the screen */
   }
   
+  .color-encode {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle; /* Vertically align the color square with the text */
+  }
   
