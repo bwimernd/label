@@ -1,7 +1,6 @@
 // Main.js
 
 import Home from "../Home/Home.js";
-import Header from "../Header/Header.js";
 import IntA from "../Products/Interactive/ProductA.js"
 import IntB from "../Products/Interactive/ProductB.js"
 import IntC from "../Products/Interactive/ProductC.js"

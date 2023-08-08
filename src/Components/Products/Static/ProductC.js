@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ProductOne from '../../Data/ProductOne';
 import Label from '../../Label/Label';
 
