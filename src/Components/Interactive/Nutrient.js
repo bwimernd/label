@@ -43,41 +43,41 @@ function getColor(nutrientName, percentage) {
   }
 }
 
-
-
-
-
 const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverContent, inputValue, dvContent, dv}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [dvHovered, setDVHovered] = useState(false);
 
   const color = getColor(name, dv);
 
-
   return (
-    <div className="tooltip-container" 
-         
-    >
-      <p className={`${className} ${getClassName(name)}  ${getIndentClass(name)}`} onMouseEnter={() => setIsHovered(true)} 
-         onMouseLeave={() => setIsHovered(false)}>
+    <div className="tooltip-container">
+      <p className={`${className} ${getClassName(name)} ${getIndentClass(name)} hover-highlight`} 
+         onMouseEnter={() => setIsHovered(true)} 
+         onMouseLeave={() => setIsHovered(false)}
+         style={popoverContent ? { textDecoration: 'underline' } : null} // Underline if there's popover content
+      >
         {name} <span className='p-normal'>{value}{unit}</span>
         
         {isHovered && <Popover title={name} content={popoverContent} />}
       </p>
       
       {(percentage !== null && percentage !== undefined) &&
-        <p className='p-bold alignRight' onMouseEnter={() => setDVHovered(true)} 
-        onMouseLeave={() => setDVHovered(false)}>
-         {color && <span className="color-encode" style={{display: 'inline-block', width: '12.5px', height: '12.5px', borderRadius: color.borderRadius, backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor}`, marginRight: '5px'}}></span>}
+        <p className='p-bold alignRight hover-highlight' 
+           onMouseEnter={() => setDVHovered(true)} 
+           onMouseLeave={() => setDVHovered(false)}
+           style={dvContent ? { textDecoration: 'underline' } : null} // Underline if there's Daily Value content
+        >
+          {color && <span className="color-encode" style={{display: 'inline-block', width: '12.5px', height: '12.5px', borderRadius: color.borderRadius, backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor}`, marginRight: '5px'}}></span>}
           {percentage}%
           {dvHovered && <DailyValuePopover title={name} content={dvContent} inputValue={inputValue} percentage={percentage} dv={dv} />}
-         </p>
+        </p>
       }
       <br />
       <hr className={hrClass} />
-      </div>
+    </div>
   );
 };
 
 export default React.memo(Nutrient);
+
 

@@ -7,6 +7,9 @@ const Navigation = () => (
         <Link to="/" className="link">Home</Link>
       </li>
       <li>
+        <Link to="/int-tutorial">Interactive Tutorial</Link>
+      </li>
+      <li>
         <Link to="/int-A" className="link">Interactive Product A</Link>
       </li>
       <li>

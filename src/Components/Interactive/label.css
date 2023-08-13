@@ -148,3 +148,7 @@
     text-align: center;
     color: black;
   }
+  .hover-highlight:hover {
+    background-color: rgba(255, 255, 0, 1); /* A subtle gray highlight */
+    cursor: pointer;
+}
