@@ -3,7 +3,7 @@ import './label.css';
 
 const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
   <>
-    <h1>Nutrition Facts {value}</h1>
+    <h1>Nutrition Facts</h1>
     <hr />
     <h5>{nutrient.servings} servings per container</h5>
     <h3 className='alignLeft'> Serving size </h3> 
