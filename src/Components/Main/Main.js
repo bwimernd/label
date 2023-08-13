@@ -11,6 +11,7 @@ import StatB from "../Products/Static/ProductB.js"
 import StatC from "../Products/Static/ProductC.js"
 import StatRank from "../Products/Static/Ranking.js"
 import StatUser from "../Products/Static/Usability.js"
+import Tutorial from "../Products/Tutorial/Tutorial.js"
 
 
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
@@ -34,6 +35,7 @@ function Main() {
                 <Route path="/stat-C" element={ <StatC/>} />
                 <Route path="/stat-rank" element= {<StatRank />} />
                 <Route path="/stat-usability" element={<StatUser />} />
+                <Route path="/tutorial" element={ <Tutorial /> }/>
                 <Route path="/" element={ <Home /> }/>
                 <Route path="*" element={<Navigate to="/" replace />} />
       
