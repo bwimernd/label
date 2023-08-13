@@ -3,11 +3,13 @@ import './label.css';
 import Nutrient from './Nutrient'; // make sure the path is correct
 import LabelHeader from './LabelHeader';
 
-const Label = ({nutrition, value}) => {
+const Label = ({nutrition, title, value}) => {
   const [inputValue, setInputValue] = useState('1');
   const handleChange = event => setInputValue(event.target.value);
   
   return (
+    <div>
+      <h3>{title}</h3>
     <div className='all'>
       {nutrition.map(nutrient => (
         <article key={nutrient.id} className='label'>
@@ -26,10 +28,12 @@ const Label = ({nutrition, value}) => {
             <Nutrient className="alignLeft" name="Vitamin D" value={inputValue * nutrient.vitamind} unit="mcg" percentage={inputValue * nutrient.vitamind_dv}/>
             <Nutrient className="alignLeft" name="Calcium" value={inputValue * nutrient.calcium} unit="mg" percentage={inputValue * nutrient.calcium_dv}/>
             <Nutrient className="alignLeft" name="Iron" value={inputValue * nutrient.iron} unit="mg" percentage={inputValue * nutrient.iron_dv}/>
-            <Nutrient className="alignLeft" name="Potassium" value={inputValue * nutrient.potassium} unit="mg" percentage={inputValue * nutrient.potassium_dv}/>
+            <Nutrient className="alignLeft" name="Potassium" value={inputValue * nutrient.potassium} unit="mg" percentage={inputValue * nutrient.potassium_dv} hrClass="new1"/>
+            <p className='footnote'><span>*</span> The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. </p>
           </div>
         </article>
       ))}
+    </div>
     </div>
   );
 };

@@ -54,7 +54,7 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-pink);
+  background: var(--clr-primary-1);
   color: var(--clr-grey-9);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -134,7 +134,7 @@ main {
   align-items: center;
 }
 .container {
-  width: 80vw;
+  width: 100vw;
   margin: 5rem 1rem;
   background:#fff;
   border-radius: var(--radius);
@@ -144,5 +144,26 @@ main {
 
 .interactive-container {
   display: flex;
-  align-items: flex-start; 
+  flex-direction: row;
+  align-items: center; /* This centers the items horizontally */
+  justify-content: center; /* This centers the items vertically */
+  height: 100vh; /* This ensures the container takes the full height of the viewport */
+  padding: 10px; /* Some spacing around */
+}
+
+
+.interactive-wrapper {
+  display: flex;
+  justify-content: space-between; /* This spaces out the Interactive components */
+  transform: scale(0.8); /* This ensures the wrapper takes the full width */
+  /* In case the components need to wrap */
+}
+
+.interactive-wrapper > * {
+  width: 80%; /* Reducing size to 80% */
+   /* Some spacing around each component */
+}
+.nutrient-legend-wrapper {
+  margin-left: -140px;
+  width: 200px; /* or any other value that looks good */
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductOne from '../../Data/ProductOne';
+import Cereal from '../../Data/Cereal';
 import Interactive from '../../Interactive/Interactive.js';
 import NutrientLegend from '../../Interactive/Legend/NutrientLegend.js';
 
@@ -7,10 +7,10 @@ function ProductC() {
 
   return (
     <div>
-    <h1>Product C</h1>
+    
     <div className='interactive-container'>
        
-        <Interactive nutrition={ProductOne} value={1} />
+        <Interactive nutrition={Cereal} title="Cereal" value={1} />
         <NutrientLegend />
     </div>
     </div>

@@ -58,8 +58,8 @@
    margin: 0px;
   }
   .footnote {
-    font-family:  'Helvetica';
-   font-size: 0.6rem;
+   font-family:  'Helvetica';
+   font-size: 0.65rem !important;
    color: black;
    margin: 0px;
    
@@ -79,4 +79,12 @@
   }
   .new2{
     border-top: 0.7rem solid black;
+  }
+  .interactive-container {
+    display: flex;
+    align-items: flex-start; 
+  }
+  h3 {
+    text-align: center;
+    color: black;
   }

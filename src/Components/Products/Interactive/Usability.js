@@ -1,9 +1,9 @@
 import React from 'react';
-import Cake from '../../Data/Cake';
+import MacCheese from '../../Data/MacCheese';
 import Interactive from '../../Interactive/Interactive.js';
 import NutrientLegend from '../../Interactive/Legend/NutrientLegend.js';
 
-function ProductA() {
+function Usability() {
    
 
   
@@ -11,7 +11,7 @@ function ProductA() {
     <>
     <div>
     <div className='interactive-container'>
-        <Interactive nutrition={Cake} title="Cake" value={1} />
+        <Interactive nutrition={MacCheese} title="Mac & Cheese" value={1} />
         <NutrientLegend />
     </div>
     </div>
@@ -19,4 +19,4 @@ function ProductA() {
   );
 }
 
-export default ProductA;
+export default Usability;

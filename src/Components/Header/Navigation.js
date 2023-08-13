@@ -16,6 +16,12 @@ const Navigation = () => (
         <Link to="/int-C" className="link">Interactive Product C</Link>
       </li>
       <li>
+        <Link to="/int-rank" className="link">Interactive Ranking</Link>
+      </li>
+      <li>
+        <Link to="/int-usability" className="link">Interactive Usability</Link>
+      </li>
+      <li>
         <Link to="/stat-A" className="link">Static Product A</Link>
         </li>
         <li>
@@ -23,6 +29,12 @@ const Navigation = () => (
       </li>
       <li>
         <Link to="/stat-C" className="link">Static Product C</Link>
+      </li>
+      <li>
+        <Link to="/stat-rank" className="link">Static Ranking</Link>
+      </li>
+      <li>
+        <Link to="/stat-usability" className="link">Static Usability</Link>
       </li>
     </ul>
   </nav>

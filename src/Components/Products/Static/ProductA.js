@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductOne from '../../Data/ProductOne';
+import Cake from '../../Data/Cake';
 import Label from '../../Label/Label';
 
 function ProductA() {
@@ -10,8 +10,8 @@ function ProductA() {
   return (
     <>
     <div>
-        <h1>Product A</h1>
-        <Label nutrition={ProductOne} value={1}/>
+        
+        <Label nutrition={Cake} title="Cake" value={1}/>
     </div>
     
     </>

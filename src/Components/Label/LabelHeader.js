@@ -8,7 +8,7 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
     <h5>{nutrient.servings} servings per container</h5>
     <h3 className='alignLeft'> Serving size </h3> 
     <h3 className='alignRight'>
-      1 {nutrient.serving_size}
+    {nutrient.serving_size}
     </h3>
     <br />
     <hr className='new1'/>
@@ -17,6 +17,11 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
     <h2 className='alignRight'>{inputValue*nutrient.calories}</h2> 
     <br /><br />
     <hr className='new2'/>
+    <div className="tooltip-container">
+      <p className="alignRight p-bold">% Daily Value*</p>
+    </div>
+    <br />
+    <hr />
   </>
 );
 

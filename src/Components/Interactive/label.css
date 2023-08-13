@@ -9,7 +9,9 @@
     max-width: var(--fixed-width);
     padding: 1.5rem 2rem;
     border: 0.1rem solid black;
+    margin-left: 10px;
   }
+  
   .label h1 {
    font-family: 'Helvetica';
    font-size: 1.9rem;
@@ -58,8 +60,8 @@
    margin: 0px;
   }
   .footnote {
-    font-family:  'Helvetica';
-   font-size: 0.6rem;
+   font-family:  'Helvetica';
+   font-size: 0.65rem !important;
    color: black;
    margin: 0px;
    
@@ -138,4 +140,11 @@
     margin-right: 5px;
     vertical-align: middle; /* Vertically align the color square with the text */
   }
-  
+  .interactive-container {
+    display: flex;
+    align-items: flex-start; 
+  }
+  h3 {
+    text-align: center;
+    color: black;
+  }

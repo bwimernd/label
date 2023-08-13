@@ -3,12 +3,15 @@ import './label.css';
 import Nutrient from './Nutrient'; // make sure the path is correct
 import LabelHeader from './LabelHeader';
 
-const Interactive = ({nutrition, value}) => {
+const Interactive = ({nutrition, title, value}) => {
   const [inputValue, setInputValue] = useState('1');
   const handleChange = event => setInputValue(event.target.value);
   
   return (
+    <div>
+    <h3>{title}</h3>
     <div className='all'>
+      
       {nutrition.map(nutrient => (
         <article key={nutrient.id} className='label'>
           <div>
@@ -213,11 +216,13 @@ const Interactive = ({nutrition, value}) => {
                   <p className="info-header-good">Potassium is a nutrient to get more of.</p>
                   <p className="info-normal">The Daily Value for total fat is 4,700mg per day</p>
                 </div>} 
+              hrClass="new1"
             />
-
+            <p className='footnote'><span>*</span> The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. </p>
           </div>
         </article>
       ))}
+    </div>
     </div>
   );
 };
