@@ -164,6 +164,6 @@ main {
    /* Some spacing around each component */
 }
 .nutrient-legend-wrapper {
-  margin-left: -140px;
+  margin-left: -80px;
   width: 200px; /* or any other value that looks good */
 }
