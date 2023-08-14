@@ -5,7 +5,14 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
   <>
     <h1>Nutrition Facts</h1>
     <hr />
-    <h5>{nutrient.servings} servings per container</h5>
+    
+    <div className="tooltip-contain">
+    <h5 className='p-underline'>{nutrient.servings} servings per container</h5>
+      <div className="popover">
+        <p className='info-normal'>This product has <b>{nutrient.servings} servings </b> . Adjusting the 'Amount per ___ serving' to <b>{nutrient.servings}</b> will show nutrition values for consuming the entire product.</p>
+     </div>
+</div>
+
     <h3 className='alignLeft'> Serving size </h3> 
     <h3 className='alignRight'>
       {nutrient.serving_size}
@@ -21,8 +28,13 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
     <h2 className='alignRight'>{inputValue*nutrient.calories}</h2> 
     <br /><br />
     <hr className='new2'/>
-    <div className="tooltip-container">
-      <p className="alignRight p-bold">% Daily Value*</p>
+    <div className="tooltip-contain">
+      <p className="alignRight p-bold p-underline">% Daily Value*</p>
+      <div className="tooltip-content">
+        <h3>% Daily Value (%DV) </h3>
+        <p className='info-normal'>%DV shows <b>how much a nutrient in a serving of the food contributes to a total daily diet.</b></p>
+        <p className='info-normal'>The %DV column doesn't add up vertically to 100%. Instead, the %DV is the <b>percentage of the Daily Value</b> for each nutrient in a serving of the food. The Daily Values are reference amounts (in grams, milligrams, or micrograms) of nutrients to consume or not to exceed each day.</p>
+      </div>
     </div>
     <br />
     <hr />

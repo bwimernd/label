@@ -19,3 +19,72 @@
 h2 {
     text-align: center;
 }
+
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; /* vh stands for viewport height. 100vh will cover the full height of the screen */
+  }
+  .label {
+    display: grid;
+    column-gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    display: 1;
+    width: 70vw;
+    background: var(--clr-white);
+    max-width: var(--fixed-width);
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid black;
+    margin-left: 10px;
+  }
+  .label h1 {
+    font-family: 'Helvetica';
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3%;
+    margin: 0px;
+    color: black;
+   }
+   
+   .label h2 {
+    font-family:  'Helvetica';
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: black;
+   
+    margin: 0px;
+    
+   }
+   
+   .label h3 {
+     font-family:  'Helvetica';
+     font-size: 1rem;
+     font-weight: bold;
+     color: black;
+     margin: 0px;
+     
+   }
+   .label h4{
+     font-family:  'Helvetica';
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0px;
+   }
+   .label h5{
+    font-family:  'Helvetica';
+    font-size: 1rem;
+    font-weight: lighter ;
+    color: black;
+    margin: 0px;
+   }
+   .label p{
+    font-family:  'Helvetica';
+    font-size: 0.8rem;
+    color: black;
+    margin: 0px;
+   }
+   

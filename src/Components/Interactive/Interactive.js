@@ -171,6 +171,7 @@ const Interactive = ({nutrition, title, value}) => {
                   <p className="info-header-good">Vitamin D is a nutrient to get more of.</p>
                   <p className="info-normal">The Daily Value for Vitamin D is 20mcg per day</p>
                 </div>} 
+              popoverContent="Vitamins and minerals are nutrients to get more of. Diets rich in vitamins and minerals promote growth, development, and normal body functioning.              "
             />
 
             <Nutrient 
@@ -186,6 +187,8 @@ const Interactive = ({nutrition, title, value}) => {
                   <p className="info-header-good">Calcium is a nutrient to get more of.</p>
                   <p className="info-normal">The Daily Value for total fat is 1,300mg per day</p>
                 </div>} 
+                popoverContent="Vitamins and minerals are nutrients to get more of. Diets rich in vitamins and minerals promote growth, development, and normal body functioning.              "
+                
             />
 
             <Nutrient 
@@ -201,6 +204,8 @@ const Interactive = ({nutrition, title, value}) => {
                   <p className="info-header-good">Iron is a nutrient to get more of.</p>
                   <p className="info-normal">The Daily Value for total fat is 18mg per day</p>
                 </div>} 
+                popoverContent="Vitamins and minerals are nutrients to get more of. Diets rich in vitamins and minerals promote growth, development, and normal body functioning.              "
+                
             />
 
             <Nutrient 
@@ -217,6 +222,8 @@ const Interactive = ({nutrition, title, value}) => {
                   <p className="info-normal">The Daily Value for total fat is 4,700mg per day</p>
                 </div>} 
               hrClass="new1"
+              popoverContent="Vitamins and minerals are nutrients to get more of. Diets rich in vitamins and minerals promote growth, development, and normal body functioning.              "
+            
             />
             <p className='footnote'><span>*</span> The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. </p>
           </div>

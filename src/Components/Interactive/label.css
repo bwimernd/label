@@ -75,7 +75,7 @@
     color: black;
   }
   .alignLeft {
-    float:left;
+    float:left !important;
   }
   .tab {
     padding-left: 20px; /* Adjust this to the desired indentation */
@@ -85,7 +85,7 @@
   }
 
   .alignRight {
-    float: right;
+    float: right !important;
   }
   .new1{
     border-top: 0.3rem solid black;
@@ -151,4 +151,80 @@
   .hover-highlight:hover {
     background-color: rgba(255, 255, 0, 1); /* A subtle gray highlight */
     cursor: pointer;
+}
+
+/* label.css */
+
+.tooltip-contain {
+  position: relative;
+  
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 102%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #888;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: left;
+
+}
+
+.tooltip-contain:hover .tooltip-content {
+  display: block;
+  opacity: 1;
+}
+h5{
+  
+  width: 50%
+}
+
+.tooltip-contain h3 {
+  /* Styles for the title */
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+}
+.tooltip-contain:hover .p-underline {
+  background-color: yellow;
+}
+.info-normal {
+  font-size: 1em;
+  color: #333;
+  margin-top: 5px;
+  padding: 5px;
+  font-weight: normal;
+}
+.p-underline {
+  text-decoration: underline;
+  
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 102%; /* Move the popover to the left of the text */
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #888;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: left;
+}
+.tooltip-contain:hover .popover {
+  display: block;
+  opacity: 1;
 }

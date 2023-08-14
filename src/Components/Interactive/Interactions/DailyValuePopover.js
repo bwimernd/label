@@ -13,7 +13,7 @@ function getIntensityText(percentage) {
 
 function getColor(nutrientName, percentage) {
   const redNutrients = ['Sodium', 'Saturated Fat', 'Includes Added Sugars'];
-  const greenNutrients = ['Dietary Fiber', 'Vitamin D', 'Calcium', 'Potassium'];
+  const greenNutrients = ['Dietary Fiber', 'Vitamin D', 'Calcium', 'Potassium','Iron'];
   const percentageIntensity = getIntensityText(percentage);
 
   if (redNutrients.includes(nutrientName)) {
