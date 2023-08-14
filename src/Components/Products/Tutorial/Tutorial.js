@@ -48,7 +48,7 @@ const Tutorial = () => {
                     </div>
                 </article>
             </div>
-            <p>Enjoy your healthy journey!</p>
+            
         </div>
     );
 };
