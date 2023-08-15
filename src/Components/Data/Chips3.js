@@ -4,7 +4,7 @@ const Chips3 = [
         product: 'Chips3',
         name: 'Beanitos Black Bean Tortilla Chips',
         servings: 20,
-        serving_size: 'About 11 chips(1oz)',
+        serving_size: 'About 11 chips(28g)',
         calories: 130,
         tfat: 7,
         tfatdv: 9,
