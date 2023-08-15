@@ -8,7 +8,7 @@ const LabelHeader = ({ value, inputValue, handleChange, nutrient }) => (
     
     <div className="tooltip-contain">
     <h5 className='p-underline'>{nutrient.servings} servings per container</h5>
-      <div className="popover">
+      <div className="popove">
         <p className='info-normal'>This product has <b>{nutrient.servings} servings </b> . Adjusting the 'Amount per ___ serving' to <b>{nutrient.servings}</b> will show nutrition values for consuming the entire product.</p>
      </div>
 </div>

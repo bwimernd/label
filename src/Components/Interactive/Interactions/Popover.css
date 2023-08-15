@@ -1,5 +1,6 @@
 .popover {
     position: absolute;
+    display: block;
     z-index: 10;
     top: 50%;
     right: 102%; /* Move the popover to the left of the text */

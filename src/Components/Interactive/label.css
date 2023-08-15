@@ -208,7 +208,7 @@ h5{
   
 }
 
-.popover {
+.popove {
   display: none;
   position: absolute;
   z-index: 10;
@@ -224,7 +224,7 @@ h5{
   width: 300px;
   text-align: left;
 }
-.tooltip-contain:hover .popover {
+.tooltip-contain:hover .popove {
   display: block;
   opacity: 1;
 }
