@@ -195,6 +195,7 @@ h5{
 }
 .tooltip-contain:hover .p-underline {
   background-color: yellow;
+  cursor: pointer;
 }
 .info-normal {
   font-size: 1em;
