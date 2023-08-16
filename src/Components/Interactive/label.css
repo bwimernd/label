@@ -126,6 +126,9 @@
     padding: 5px;
   }
 
+  .info-bold {
+    font-weight: bold !important;
+  }
   .all {
     display: flex;
     justify-content: center;

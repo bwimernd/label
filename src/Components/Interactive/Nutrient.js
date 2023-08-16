@@ -58,7 +58,7 @@ const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverCo
       >
         {name} <span className='p-normal'>{value}{unit}</span>
         
-        {isHovered && <Popover title={name} content={popoverContent} />}
+        {isHovered && <Popover title={name} content={popoverContent} dvContent={dvContent}/>}
       </p>
       
       {(percentage !== null && percentage !== undefined) &&
@@ -69,7 +69,7 @@ const Nutrient = ({ className, name, value, unit, percentage, hrClass, popoverCo
         >
           {color && <span className="color-encode" style={{display: 'inline-block', width: '12.5px', height: '12.5px', borderRadius: color.borderRadius, backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor}`, marginRight: '5px'}}></span>}
           {percentage}%
-          {dvHovered && <DailyValuePopover title={name} content={dvContent} inputValue={inputValue} percentage={percentage} dv={dv} />}
+          {dvHovered && <DailyValuePopover title={name}  inputValue={inputValue} percentage={percentage} dv={dv} />}
         </p>
       }
       <br />

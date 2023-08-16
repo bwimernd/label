@@ -41,7 +41,7 @@ function getColor(nutrientName, percentage) {
 function nutrientMessage(input,percent,name) {
   let nutrientMessage = '';
   if (percent > 100) {
-    nutrientMessage = `If you ate ${input} amount of servings, you would have exceeded your recommended Daily Value for ${name}.`;
+    nutrientMessage = `If you ate ${input} servings, you would have exceeded your recommended Daily Value for ${name}.`;
   } else if (input === 1) {
     nutrientMessage = `Consuming ${input} serving of this product, you would have achieved eating ${percent}% of your recommended Daily Value ${name}.`;
   } else {
@@ -55,7 +55,8 @@ const DailyValuePopover = ({title, inputValue, percentage,dv }) => {
   return(
   <div className="dv-popover">
     <h3>{title}</h3>
-    <div style={{backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor} `}}> {color.text}</div>
+    
+    <div style={{backgroundColor: color.backgroundColor, border: `1px solid ${color.borderColor} `}}> {color.text} </div>
     <p className='info-normal'>{nutrientMessage(inputValue,percentage,title)}</p>
   </div>
 )};

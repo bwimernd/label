@@ -11,10 +11,14 @@
 .tutorial-step {
     margin: 10px 0;
 }
-
+.p-bold {
+  font-weight: bold;
+  color: black;
+}
 .tutorial-highlight {
     text-decoration: underline;
-    color: blue;
+    color: black;
+    cursor: pointer;
 }
 h2 {
     text-align: center;
@@ -88,3 +92,22 @@ h2 {
     margin: 0px;
    }
    
+   .red {
+    display: inline-block; 
+    width: 12px;
+    height: 12px;
+    background-color: #e6550d;
+    border-color: #a50f15 ;
+    margin-right: 5px;
+    
+   }
+
+   .green {
+    display: inline-block; 
+    width: 12px;
+    height: 12px;
+    background-color: #31a354;
+    border-color: #006d2c ;
+    margin-right: 5px;
+    border-radius: 50%;
+   }
