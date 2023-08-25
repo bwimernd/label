@@ -80,7 +80,7 @@ const Interactive = ({nutrition, title, value}) => {
               inputValue={inputValue}
               popoverContent={<p className='info-normal'>Diets higher in sodium are associated with an increased risk of developing high blood pressure, which can raise the risk of heart attacks, heart failure, stroke, kidney disease, and blindness.</p>}
               dvContent={
-                <p className=" info-bold info-normal">To reach 100% of the Daily Value (%DV), you would need to consume 78 g of Total Fat per day.</p>} 
+                <p className=" info-bold info-normal">To reach 100% of the Daily Value (%DV), you would need to consume 2,300mg of Sodium per day.</p>} 
             />
 
             <Nutrient 
